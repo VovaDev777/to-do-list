@@ -1,0 +1,91 @@
+/* Základné nastavenia */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: burlywood; /* Dark coffee background */
+  color: #f2e7dc; /* Creamy coffee color for text */
+  min-height: 100vh;
+}
+
+/* Kontejner aplikácie */
+.app-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #3e3b3a; /* Medium coffee brown */
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Hlavný formulár */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ebe2d8; /* Light beige */
+  color: #3e3b3a;
+}
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #6f4e37; /* Coffee brown */
+  color: #f2e7dc;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #8a6340; /* Slightly lighter coffee brown */
+}
+
+/* Filterové tlačidlá */
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.filter-buttons .active {
+  background-color: #8a6340; /* Highlighted coffee brown */
+}
+
+/* Štýl úloh */
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #4b403a; /* Dark coffee brown */
+  border-radius: 4px;
+}
+.task-item.completed {
+  text-decoration: line-through;
+  color: #b3a497; /* Lighter coffee tone for completed tasks */
+}
+.task-item button {
+  background-color: #b04e30; /* Deep reddish-brown */
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: #f2e7dc;
+}
+.task-item button:hover {
+  background-color: #d1603d; /* Brighter reddish-brown for hover */
+}

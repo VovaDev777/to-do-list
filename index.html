@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>To-Do List</h1>
+        </header>
+        
+        <main>
+            <form id="taskForm">
+                <input type="text" id="taskInput" placeholder="Pridať novú úlohu..." required>
+                <button type="submit">Pridať</button>
+            </form>
+            
+            <div class="filter-buttons">
+                <button id="filterAll" class="active">Všetky</button>
+                <button id="filterActive">Aktívne</button>
+                <button id="filterCompleted">Dokončené</button>
+            </div>
+            
+            <ul id="taskList"></ul>
+        </main>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

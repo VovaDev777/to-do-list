@@ -1,4 +1,4 @@
-/* Základné nastavenia */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +9,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: burlywood; /* Dark coffee background */
-  color: #f2e7dc; /* Creamy coffee color for text */
+  background-color: burlywood; 
+  color: #f2e7dc; 
   min-height: 100vh;
 }
 

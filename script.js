@@ -1,4 +1,4 @@
-// Inicializácia
+
 document.addEventListener("DOMContentLoaded", () => {
     const taskForm = document.getElementById("taskForm");
     const taskInput = document.getElementById("taskInput");
@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
     let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
-    // Funkcia na vykreslenie úloh
     const renderTasks = (filter = "all") => {
         taskList.innerHTML = "";
         let filteredTasks = tasks;

@@ -33,12 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 
-    // Uložiť úlohy do localStorage
     const saveTasks = () => {
         localStorage.setItem("tasks", JSON.stringify(tasks));
     };
 
-    // Pridať úlohu
     taskForm.addEventListener("submit", (e) => {
         e.preventDefault();
         const newTask = {
@@ -52,7 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
         renderTasks();
     });
 
-    // Označiť úlohu ako dokončenú/nedokončenú
     window.toggleTask = (taskId) => {
         tasks = tasks.map(task => 
             task.id === taskId ? { ...task, completed: !task.completed } : task
@@ -61,14 +58,12 @@ document.addEventListener("DOMContentLoaded", () => {
         renderTasks();
     };
 
-    // Odstrániť úlohu
     window.deleteTask = (taskId) => {
         tasks = tasks.filter(task => task.id !== taskId);
         saveTasks();
         renderTasks();
     };
 
-    // Filter úloh
     filterButtons.forEach(button => {
         button.addEventListener("click", () => {
             document.querySelector(".filter-buttons .active").classList.remove("active");
@@ -78,5 +73,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    renderTasks(); // Prvé vykreslenie úloh
+    renderTasks(); 
 });

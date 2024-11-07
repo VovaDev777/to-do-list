@@ -77,14 +77,14 @@ button:hover {
 }
 .task-item.completed {
   text-decoration: line-through;
-  color: #b3a497; /* Lighter coffee tone for completed tasks */
+  color: #b3a497; 
 }
 .task-item button {
-  background-color: #b04e30; /* Deep reddish-brown */
+  background-color: #b04e30;
   padding: 5px 10px;
   border-radius: 4px;
   color: #f2e7dc;
 }
 .task-item button:hover {
-  background-color: #d1603d; /* Brighter reddish-brown for hover */
+  background-color: #d1603d; 
 }

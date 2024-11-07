@@ -49,7 +49,7 @@ button {
   transition: background-color 0.3s ease;
 }
 button:hover {
-  background-color: #8a6340; /* Slightly lighter coffee brown */
+  background-color: #8a6340; 
 }
 
 /* Filterové tlačidlá */
@@ -59,7 +59,7 @@ button:hover {
   margin-bottom: 20px;
 }
 .filter-buttons .active {
-  background-color: #8a6340; /* Highlighted coffee brown */
+  background-color: #8a6340; 
 }
 
 /* Štýl úloh */
